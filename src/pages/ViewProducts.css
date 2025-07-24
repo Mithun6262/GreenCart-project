@@ -1,0 +1,203 @@
+* {
+  box-sizing: border-box;
+}
+
+.view-products-page {
+  padding: 20px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.view-products-page h2 {
+  margin-bottom: 20px;
+}
+
+.product-search-bar {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.product-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.discount-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: #FF3B30;
+  color: white;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.product-info {
+  width: 100%;
+  text-align: center;
+}
+
+.product-info h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.product-info p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.product-price {
+  margin: 8px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #888888;
+  font-size: 14px;
+}
+
+.discounted-price {
+  color: #FF3B30;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.product-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.edit-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.edit-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit-modal {
+  background-color: #fff;
+  padding: 30px 24px;
+  border-radius: 12px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
+}
+
+.edit-modal h3 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #2D2D2D;
+}
+
+.edit-modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.edit-modal input {
+  padding: 10px 12px;
+  border: 1px solid #FFA500;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: #FFF8F0;
+  outline: none;
+}
+
+.edit-modal input:focus {
+  border-color: #007BFF;
+  background-color: #fff;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.modal-buttons button {
+  flex: 1;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  background-color: #FFA500;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: background-color 0.2s ease;
+}
+
+.modal-buttons button:hover {
+  background-color: #e69500;
+}
+
+.modal-buttons button.cancel-btn {
+  background-color: #888;
+}
+
+.modal-buttons button.cancel-btn:hover {
+  background-color: #666;
+}

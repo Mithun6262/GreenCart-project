@@ -1,0 +1,72 @@
+.all-orders-page {
+  padding: 20px;
+  background-color: #FFF5E6;
+  min-height: 100vh;
+}
+
+.all-orders-page h2 {
+  margin-bottom: 20px;
+  color: #2D2D2D;
+}
+
+.error {
+  color: red;
+  margin-bottom: 16px;
+}
+
+.order-card {
+  background-color: #FFFFFF;
+  border: 1px solid #DDD;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.order-date {
+  color: #888;
+}
+
+.order-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.order-item {
+  background-color: #FFF8F0;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  border: 1px solid #eee;
+}
+
+.order-total {
+  text-align: right;
+  font-size: 16px;
+  color: #007BFF;
+  font-weight: bold;
+}
+
+.billing-summary {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #FFF8F0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.billing-summary h3 {
+  margin-bottom: 10px;
+  color: #2D2D2D;
+}

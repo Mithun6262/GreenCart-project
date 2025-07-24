@@ -1,0 +1,44 @@
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.layout-header,
+.layout-footer {
+  background-color: #0f8a5f;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.layout-main {
+  flex: 1;
+  padding: 1rem;
+}
+
+/* ✅ Responsive adjustments */
+@media (max-width: 768px) {
+  .layout-main {
+    padding: 0.75rem;
+  }
+
+  .layout-header,
+  .layout-footer {
+    padding: 0.75rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .layout-main {
+    padding: 0.5rem;
+  }
+
+  .layout-header,
+  .layout-footer {
+    padding: 0.5rem;
+    font-size: 0.85rem;
+  }
+}
